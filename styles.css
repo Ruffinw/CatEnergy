@@ -462,6 +462,7 @@ button {
 
 .example__sum-price{
     font: var(--font-md);
+    text-transform: uppercase;
 }
 
 .slider{
@@ -561,4 +562,61 @@ button {
     background: radial-gradient(circle, var(--primary-green-color) 4px, var(--white-color) 4px);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
+
+.footer {
+    background-color: var(--primary-grey-color);
+}
+
+.map{
+    background-color: var(--primary-grey-color);
+    position: relative;
+}
+
+.contact{
+    background-color: var(--white-color);
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    left: 110px;
+    top:95px;
+    z-index: 1;
+}
+
+.contact__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 87px;
+}
+
+.contact__details{
+    max-width: 163px;
+    height: 76px;
+}
+
+.contact__address-city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 155px;
+}
+
+.contact__details-text{
+    font: var(--font-md);
+    text-transform: uppercase;
+}
+
+.contact__address-city-text{
+    font: var(--font-sm);
+    color: var(--primary-dark-grey-color);
+}
+
+.map__custom{
+    width: 100%;
+    height: 400px;
+}
+
+
 
