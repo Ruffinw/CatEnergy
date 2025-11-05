@@ -176,11 +176,14 @@ button {
     opacity: 0.5;
 }
 
+.nav{
+    padding: 18px;
+}
+
 .nav__list{
     display: flex;
     align-items: center;
     gap: 35px;
-
 }
 .nav__item{
     color: inherit;
@@ -642,7 +645,7 @@ button {
     width: 570px;
     height: 201px;
     position: absolute;
-    left: 110px;
+    left: 0;
     top:95px;
     z-index: 1;
     display: flex;
@@ -687,6 +690,3 @@ button {
     width: 100%;
     height: 400px;
 }
-
-
-
