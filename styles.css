@@ -145,12 +145,13 @@ button {
 .wrapper {
     max-width: 1220px;
     margin: 0 auto;
+    position: relative;
 }
 
 .cat-image{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -148px;
     z-index: -1;
 }
 
@@ -203,6 +204,7 @@ button {
 
 .intro__title{
     font: var(--font-xl);
+    max-width: 415px;
 }
 
 .intro__desc{
@@ -220,6 +222,7 @@ button {
     text-transform: uppercase;
     margin-top: 52px;
     text-align: center;
+    cursor: pointer;
 }
 
 .intro__btn:hover{
@@ -485,6 +488,7 @@ button {
     display: flex;
     gap: 63px;
     align-items: center;
+    padding-bottom: 9px;
 }
 
 .example__sum-title{
