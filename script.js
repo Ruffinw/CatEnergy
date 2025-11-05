@@ -15,7 +15,14 @@ function initMap() {
         zoom: 16,
         controls: ['zoomControl']
     });
-    
+
+    const logoPlacemark = new ymaps.Placemark(coordinates, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: './assets/icon-logo.svg',
+        iconImageSize: [60, 60],
+        iconImageOffset: [-25.5, -65]
+    });
+
     const backgroundPlacemark = new ymaps.Placemark(coordinates, {}, {
         iconLayout: 'default#image',
         iconImageHref: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
@@ -24,19 +31,13 @@ function initMap() {
                     fill="white" stroke="#e6e6e6" stroke-width="1.5"/>
             </svg>
         `),
+        interactivityModel: 'default#silent',
         iconImageSize: [70, 70],
-        iconImageOffset: [-30, -60] 
-    });
-    
-    const logoPlacemark = new ymaps.Placemark(coordinates, {}, {
-        iconLayout: 'default#image',
-        iconImageHref: './assets/icon-logo.svg',
-        iconImageSize: [60, 60],
-        iconImageOffset: [-25.5, -65]
+        iconImageOffset: [-30, -60]
     });
 
     myMap.geoObjects.add(backgroundPlacemark);
-    myMap.geoObjects.add(logoPlacemark); 
+    myMap.geoObjects.add(logoPlacemark);
 }
 
 ymaps.ready(initMap);
