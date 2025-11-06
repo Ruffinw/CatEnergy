@@ -748,7 +748,7 @@ button {
     gap: 55px;
 }
 
-@media (max-width: 1220px){
+@media (max-width: 1320px){
     .header__inner{
         padding-right: 110px;
         padding-left: 110px;
@@ -1217,8 +1217,6 @@ button {
     .footer__inner{
         flex-direction: column;
         gap: 25px;
-        /*padding-left: 20px;*/
-        /*padding-right: 20px;*/
         padding: 39px 20px 22px;
     }
 
