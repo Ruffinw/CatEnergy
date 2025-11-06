@@ -1,4 +1,7 @@
 document
+    .getElementById("slider").max = document.getElementById("sliderWrapper").getBoundingClientRect().width
+
+document
     .getElementById("slider")
     .addEventListener('input', (change) => {
         document.getElementById("sliderCut").style.clipPath 
@@ -6,13 +9,12 @@ document
     })
 
 
-
 function initMap() {
     const coordinates = [59.938656, 30.323058];
     const mapCenter = [59.938439, 30.319246];
     const myMap = new ymaps.Map('yandex-map', {
-        center: mapCenter,
-        zoom: 16,
+        center: document.body.clientWidth > 768 ? mapCenter : coordinates,
+        zoom:  document.body.clientWidth > 768 ? 16 : 14,
         controls: ['zoomControl']
     });
 

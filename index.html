@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Cat Energy</title>
 </head>
@@ -18,6 +15,7 @@
             <div class="header__inner">
                 <div class="logo">
                     <img class="logo__img" src="./assets/logo-with-img.svg" alt="Cat Energy2">
+                    <img class="logo__img logo__img-mobile" src="./assets/logo-mobile.svg" alt="Cat Energy2">
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
@@ -32,6 +30,12 @@
                       </li>
                     </ul>
                 </nav>
+                <div class="header__mobile">
+                    <img src="./assets/logo.svg" alt="Cat Energy">
+                </div>
+                <div class="header__mobile">
+                    <img src="./assets/menu-mobile.svg" alt="">
+                </div>
             </div>
         </div>
     </header>
@@ -65,6 +69,7 @@
                                         лазить по деревьям? Пора на диету! Cat Energy Slim поможет
                                         вашему питомцу сбросить лишний вес.</p>
                                 </div>
+                                <hr class="catalog__line">
                                 <div class="catalog__item-footer">
                                     <a href="" class="catalog__item-link">
                                         <button class="catalog__item-btn">каталог slim<img class="catalog__item-btn-image" src="./assets/arrow.svg" alt="" /></button>
@@ -83,6 +88,7 @@
                                         Серия Cat Energy Pro поможет вашему коту нарастить
                                         необходимые мышцы!</p>
                                 </div>
+                                <hr class="catalog__line">
                                 <div class="catalog__item-footer">
                                     <a href="" class="catalog__item-link">
                                         <button class="catalog__item-btn">каталог pro <img class="catalog__item-btn-image" src="./assets/arrow.svg" alt="" /> </button>
@@ -138,7 +144,7 @@
                         </div>
                     </div>
                 </section>
-
+                <hr class="line">
                 <section class="example main__example">
                     <div class="example__background"></div>
                     <div class="wrapper">
@@ -150,24 +156,26 @@
                                         обычный корм на Cat Energy Slim. Отличный результат
                                         без изнуряющих тренировок! При этом он не менял своих
                                         привычек и по-прежнему спит по 16 часов в день. </p>
-                                    <div class="example__stats">
-                                        <div class="example__stat">
-                                            <h3 class="example__stat-title">5 кг</h3>
-                                            <p class="example__stat-desc">снижение веса</p>
+                                    <div class="example__content-wrapper">
+                                        <div class="example__stats">
+                                            <div class="example__stat">
+                                                <h3 class="example__stat-title">5 кг</h3>
+                                                <p class="example__stat-desc"><span class="example__stat-desc--mobile">снижение веса</span></p>
+                                            </div>
+                                            <div class="example__stat">
+                                                <h3 class="example__stat-title">60 дней</h3>
+                                                <p class="example__stat-desc">затрачено времени</p>
+                                            </div>
                                         </div>
-                                        <div class="example__stat">
-                                            <h3 class="example__stat-title">60 дней</h3>
-                                            <p class="example__stat-desc">затрачено времени</p>
+                                        <div class="example__sum">
+                                            <h4 class="example__sum-title">Затраты на питание:</h4>
+                                            <p class="example__sum-price">15 000 руб.</p>
                                         </div>
-                                    </div>
-                                    <div class="example__sum">
-                                        <h4 class="example__sum-title">Затраты на питание:</h4>
-                                        <p class="example__sum-price">15 000 руб.</p>
                                     </div>
                                 </div>
                                 <div class="example__slider">
                                     <div class="example__slider-wrapper slider">
-                                        <div class="slider__wrapper">
+                                        <div class="slider__wrapper" id="sliderWrapper">
                                             <img id="sliderCut" class="slider__image slider__image--first" src="./assets/first.jpeg" alt="">
                                             <img class="slider__image" src="./assets/second.jpeg" alt="">
                                         </div>
@@ -182,6 +190,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="map">
                     <div class="wrapper">
                         <div class="contact">
@@ -204,7 +213,6 @@
                     </div>
                 </section>
             </div>
-        </div>
     </main>
 
     <footer class="footer">
@@ -213,6 +221,7 @@
                 <div class="logo-no-img">
                     <img class="logo-no-img__img" src="./assets/logo.svg" alt="Cat Energy">
                 </div>
+                <hr class="catalog__line">
                 <div class="social">
                     <ul class="social__list">
                         <li class="social__list-item">
@@ -232,6 +241,7 @@
                         </li>
                     </ul>
                 </div>
+                <hr class="catalog__line">
                 <div class="footer-logo">
                     <p class="footer-logo__text">HTML Academy</p>
                     <img class="footer-logo__img" src="./assets/Academy.svg" alt="HTML Academy">
