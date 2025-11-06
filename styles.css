@@ -448,6 +448,10 @@ button {
     gap: 27px;
 }
 
+.catalog__line{
+    display: none;
+}
+
 .footer-logo{
     display: flex;
     align-items: center;
