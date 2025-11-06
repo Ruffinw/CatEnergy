@@ -36,4 +36,4 @@ git clone https://github.com/Ruffinw/CatEnergy.git
 
 🌐 Демо
 
-[GitHub Pages Demo](ruffinw.github.io/CatEnergy)
+[GitHub Pages Demo](https://ruffinw.github.io/CatEnergy/)
